@@ -3,6 +3,7 @@ import './App.css';
 import BarraNavegacion from './Components/BarraNavegacion';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemListContainer from './Components/ItemListContainer';
+import ItemDetailContainer from './Components/ItemDetailContainer';
 
 function App() {
   return (
@@ -21,8 +22,9 @@ function App() {
         >
           Learn React
         </a> */}
+        <ItemListContainer greeting="Bienvenido a Stomp Shoes"/>
       </header>
-      <ItemListContainer greeting="Bienvenido a Stomp Shoes"/>
+      <ItemDetailContainer/>
     </div>
   );
 }
