@@ -10,13 +10,16 @@ function ItemDetailContainer() {
     
     return (
         <div>
-            {data !== null ? (
+            {
+                console.log(data)
+            }
+            {/* {data !== null ? (
                 data.map((data, index) => {
                     return <p key={index} id={index}>{data.name}</p>;
                 })
             ) : (
                 <h3>Cargando</h3>
-            )}
+            )} */}
         </div>
     );
 }
