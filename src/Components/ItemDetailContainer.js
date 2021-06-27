@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import ItemCount from './ItemCount';
+
 
 function ItemDetailContainer() {
     const [data, setData] = useState(null);
@@ -25,17 +25,4 @@ function ItemDetailContainer() {
     );
 }
 
-function ItemDetail({item}) {
-    onAdd(quantityToAdd) {
-
-    }
-    return(
-        <div>
-            <ItemCount/>
-            <button>Termina tu compra</button>
-        </div>
-        
-    )
-}
-
-export default ItemDetailContainer;
+export default ItemDetailContainer

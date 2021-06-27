@@ -23,7 +23,7 @@ class ItemCount extends Component {
 
                 <button onClick={this.restar.bind(this)} style={{color: 'white', background:'blue', padding: 5, width:100, borderRadius: 5, margin: 5}}>-</button>
 
-                {/* <button style={{color: 'white', background:'blue', padding: 5, width:200, borderRadius: 5, margin: 5}}>Añadir al carrito</button> */}
+                <button style={{color: 'white', background:'blue', padding: 5, width:200, borderRadius: 5, margin: 5}}>Añadir al carrito</button>
             </div>
         )
     }

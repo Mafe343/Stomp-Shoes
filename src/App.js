@@ -2,8 +2,9 @@
 import './App.css';
 import BarraNavegacion from './Components/BarraNavegacion';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ItemListContainer from './Components/ItemListContainer';
-import ItemDetailContainer from './Components/ItemDetailContainer';
+// import ItemListContainer from './Components/ItemListContainer';
+// import ItemDetailContainer from './Components/ItemDetailContainer';
+import Eventos from './Components/Eventos';
 
 function App() {
   return (
@@ -22,9 +23,10 @@ function App() {
         >
           Learn React
         </a> */}
-        <ItemListContainer greeting="Bienvenido a Stomp Shoes"/>
+        <Eventos/>
       </header>
-      <ItemDetailContainer/>
+      {/* <ItemListContainer greeting="Bienvenido a Stomp Shoes"/>
+      <ItemDetailContainer/> */}
     </div>
   );
 }
