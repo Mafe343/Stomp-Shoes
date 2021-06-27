@@ -13,13 +13,13 @@ export default function Eventos() {
 }
 
 function MouseColor() {
-    const [color, setColor] = useState("orange");
+    const [color, setColor] = useState("blue");
     useEffect(() => {
         function onMouseMove(evento) {
             if(evento.clientX < window.innerWidth / 2) {
-                setColor("orange");
+                setColor("pink");
             }else {
-                setColor("blue");
+                setColor("grey");
             }
         }
 
