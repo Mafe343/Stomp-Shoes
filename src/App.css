@@ -5,6 +5,7 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  border-radius: 50%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,9 +14,15 @@
   }
 }
 
+.Titulo {
+  color: rgb(248, 236, 221);
+  font-size: 60px;
+  font-weight: bold;
+}
+
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-image: url(./Components/images/portada.gif);
+  min-height: 86vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,4 +42,25 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.Cards {
+  display: flex;
+}
+
+
+.App-Footer {
+  background-image: url(./Components/images/portada.gif);
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.logos {
+  display: flex;
 }

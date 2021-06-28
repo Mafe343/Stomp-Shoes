@@ -1,7 +1,7 @@
 import React from 'react';
 import { Col } from 'react-bootstrap';
 import {Image} from 'react-bootstrap';
-import logoS from './logoS.svg';
+import logoS from './images/logoS.svg';
 
 function CartWidget() {
     return(
