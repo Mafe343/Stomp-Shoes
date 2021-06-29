@@ -7,7 +7,7 @@ import Cards from './Cards';
 import ItemListContainer from './Components/ItemListContainer';
 import Footer from './Components/Footer';
 // import ItemDetailContainer from './Components/ItemDetailContainer';
-// import Eventos from './Components/Eventos';
+import Eventos from './Components/Eventos';
 
 
 function App() {
@@ -51,6 +51,7 @@ function App() {
 
       <ItemListContainer tituloCarrusel="Lo más vendido"/>
       <Carrusel/>
+      <Eventos/>
 
       <footer className="App-Footer">
         <Footer greeting="Síguenos en"/>
@@ -58,7 +59,6 @@ function App() {
 
       {/* <ItemListContainer greeting="Bienvenido a Stomp Shoes"/>
       <ItemDetailContainer/> */}
-      {/* <Eventos/> */}
     </div>
   );
 }

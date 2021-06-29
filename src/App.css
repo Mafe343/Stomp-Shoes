@@ -64,3 +64,8 @@
 .logos {
   display: flex;
 }
+
+.event {
+  display: flex;
+  justify-content: center;
+}
