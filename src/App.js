@@ -6,14 +6,17 @@ import Carrusel from './Components/Carrusel';
 import Cards from './Cards';
 import ItemListContainer from './Components/ItemListContainer';
 import Footer from './Components/Footer';
+// import CartContext from './CartContext';
 // import ItemDetailContainer from './Components/ItemDetailContainer';
 import Eventos from './Components/Eventos';
+import UsersList from './UserList';
+import Profile from "./Components/Profile";
+import UserState from "./context/User/UserState";
 
 
 function App() {
   return (
     <div className="App">
-
       <BarraNavegacion/>
 
       <header className="App-header">
@@ -52,6 +55,19 @@ function App() {
       <ItemListContainer tituloCarrusel="Lo más vendido"/>
       <Carrusel/>
       <Eventos/>
+      
+      <UserState>
+        <div className="container p-4">
+          <div className="row">
+            <div className="col-md-7">
+              <UsersList/>
+            </div>
+            <div className="col-md-5">
+              <Profile/>
+            </div>
+          </div>
+        </div>
+      </UserState>
 
       <footer className="App-Footer">
         <Footer greeting="Síguenos en"/>
