@@ -9,9 +9,9 @@ import Footer from './Components/Footer';
 // import CartContext from './CartContext';
 // import ItemDetailContainer from './Components/ItemDetailContainer';
 import Eventos from './Components/Eventos';
-import UsersList from './UserList';
-import Profile from "./Components/Profile";
-import UserState from "./context/User/UserState";
+// import UsersList from './UserList';
+// import Profile from "./Components/Profile";
+// import UserState from "./context/User/UserState";
 
 
 function App() {
@@ -26,8 +26,6 @@ function App() {
           Bienvenido a Stomp Shoes
         </p>
       </header>
-
-      <ItemListContainer subtitulo="Nuestras promociones"/>
 
       <div className="Cards">
         <Cards 
@@ -55,19 +53,6 @@ function App() {
       <ItemListContainer tituloCarrusel="Lo más vendido"/>
       <Carrusel/>
       <Eventos/>
-      
-      <UserState>
-        <div className="container p-4">
-          <div className="row">
-            <div className="col-md-7">
-              <UsersList/>
-            </div>
-            <div className="col-md-5">
-              <Profile/>
-            </div>
-          </div>
-        </div>
-      </UserState>
 
       <footer className="App-Footer">
         <Footer greeting="Síguenos en"/>

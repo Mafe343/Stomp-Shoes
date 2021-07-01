@@ -1,32 +1,40 @@
-import { Component } from "react"
+import React from 'react';
+import {Button} from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {Users} from './ItemData';
 
-class ItemCount extends Component {
+function ItemCount() {
+    const [Numero, setNumero] = React.useState(0);
 
-    constructor(props) {
-        super(props)
-        this.state = {counter: 0}
-    };
-
-    restar() {
-        this.setState({counter: this.state.counter - 1})
+    const handleIncrement = () => {
+      setNumero(Numero + 1)
     }
 
-    sumar() {
-        this.setState({counter: this.state.counter + 1})
+    const handleDecrement = () => {
+      setNumero(Numero - 1)
     }
-    
-    render() {
+  
+  return (
+  <div>
+    <div className="App">
+      <h1> ESTE ES EL PRIMER ENTREGABLE DEL 3ER DESAFIO </h1>
+      <h1>¿Cuanto es 2+2?</h1>
+      <p className="contador">{Numero}</p>
+      <Button color="danger" className="m-2 mb-4" onClick={handleDecrement}> Disminuir </Button>
+      <Button color="warning" className="m-2 mb-4" onClick={handleIncrement}> Incrementar </Button>
+      {Users.map((item) => {
         return(
-            <div>
-                <h2>{this.state.counter}</h2>
-                <button onClick={this.sumar.bind(this)} style={{color: 'white', background:'blue', padding: 5, width:100, borderRadius: 5, margin: 5}}>+</button>
-
-                <button onClick={this.restar.bind(this)} style={{color: 'white', background:'blue', padding: 5, width:100, borderRadius: 5, margin: 5}}>-</button>
-
-                <button style={{color: 'white', background:'blue', padding: 5, width:200, borderRadius: 5, margin: 5}}>Añadir al carrito</button>
-            </div>
+        <div key={item.id}>
+          <h2> 
+            {item.name} precio: {item.price}
+          </h2>
+        </div>
         )
-    }
+      })}
+    </div>
+  </div>
+  )
 }
+
 
 export default ItemCount;

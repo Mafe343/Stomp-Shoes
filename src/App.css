@@ -69,3 +69,18 @@
   display: flex;
   justify-content: center;
 }
+
+
+.container {
+  background-color: #343a40;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin: 30px;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .products {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
